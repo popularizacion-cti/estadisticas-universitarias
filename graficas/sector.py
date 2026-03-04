@@ -2,11 +2,7 @@ import pandas as pd
 import plotly.express as px
 
 
-def grafica_sector(df, clasificacion, nivel, region,
-                   orden_sectores,
-                   orden_sectores_ocde,
-                   colores_sectores,
-                   colores_sectores_ocde):
+def grafica_sector(df, clasificacion, nivel, region)
 
     # ==============================
     # FILTROS
@@ -39,15 +35,15 @@ def grafica_sector(df, clasificacion, nivel, region,
     # AGRUPACIONES
     # ==============================
 
-    df_grafica = (
-        df_filtrado
-        .groupby("Fecha_postulacion")[columna_sector]
-        .value_counts(normalize=True)
-        .unstack(fill_value=0)
-        .mul(100)
-        .round(1)
-        .reset_index()
-    )
+      df_grafica = (
+          df_filtrado
+          .groupby("Fecha_postulacion")[columna_sector]
+          .value_counts(normalize=True)
+          .unstack(fill_value=0)
+          .mul(100)
+          .round(1)
+          .reset_index()
+      )
 
     df_counts = (
         df_filtrado
