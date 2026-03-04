@@ -16,7 +16,7 @@ st.title("ESTADÍSTICAS NACIONALES")
 
 nivel = st.selectbox(
     "Nivel de postulación",
-    sorted(df["Nivel_postulacion"].dropna().unique())
+    orden_nivel
 )
 
 clasificacion = st.radio(
