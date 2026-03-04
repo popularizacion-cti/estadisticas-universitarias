@@ -1,6 +1,7 @@
 import pandas as pd
 import plotly.express as px
 
+from config import *
 
 def grafica_sector(df, clasificacion, nivel, region):
 
