@@ -102,6 +102,7 @@ def grafica_sector(df, clasificacion, nivel, region,
     fig.update_layout(
         plot_bgcolor="white",
         paper_bgcolor="white"
+        font=dict(color="black")
     )
 
     return fig
